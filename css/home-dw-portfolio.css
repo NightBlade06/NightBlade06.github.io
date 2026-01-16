@@ -1,3 +1,21 @@
-body{
-    background-color: blanchedalmond;
+h1 {
+    font-family: silkscreen;
+    font-size: 50px;
+}
+
+.social-media-box {
+    display: flex;
+    font-family: consolas;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+}
+
+h2 {
+  font-family: "Libre Barcode 39 Extended Text", system-ui;
+  font-size: 80px;
+  color: #850909;
+  font-weight: 500;
 }
