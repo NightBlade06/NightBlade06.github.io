@@ -72,8 +72,8 @@ input[type="text"]::placeholder {
 }
 
 .img-size-icons {
-    width: 70%;
-    margin: 10px;
+  width: 70%;
+  margin: 10px;
 }
 
 h2 {
@@ -81,4 +81,11 @@ h2 {
   font-size: 50px;
   color: #850909;
   font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  #nav-button {
+    display: none;
+    display: block;
+  }
 }
