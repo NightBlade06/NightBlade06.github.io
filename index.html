@@ -12,6 +12,28 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&family=Silkscreen:wght@400;700&display=swap"
         rel="stylesheet">
+    <script>
+        /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+    </script>
 </head>
 <header>
     <nav>
@@ -22,12 +44,23 @@
         <div class="search-bar-background">
             <input class="search-bar" id="text" type="text" placeholder="&#128270; Search...">
         </div>
+        <div id="nav-button-display" class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><img class="img-size-icons"
+                    src="images/burger-menu.png" alt="menu"></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="../html/about-dw-portfolio.html">About</a>
+                <a href="../html/projects-dw-portfolio.html">projects</a>
+                <a href="../html/contact-dw-portfolio.html">Contact</a>
+            </div>
+        </div>
         <a id="nav-button" href="../html/about-dw-portfolio.html" class="icon-box">
             <div class="icon-background"><img class="img-size-icons" src="images/hand-wave.png" alt="about-png"></div>
             <p>about</p>
         </a>
         <a id="nav-button" href="../html/projects-dw-portfolio.html" class="icon-box">
-            <div class="icon-background"><img class="img-size-icons" src="images/floppy-disk.png" alt="projects-png"></div>
+            <div class="icon-background"><img class="img-size-icons" src="images/floppy-disk.png" alt="projects-png">
+            </div>
             <p>projects</p>
         </a>
         <a id="nav-button" href="../html/contact-dw-portfolio.html" class="icon-box">
@@ -62,4 +95,5 @@
 </body>
 <footer>
 </footer>
+
 </html>

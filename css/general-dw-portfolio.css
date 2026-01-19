@@ -10,7 +10,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: max-content;
+  width: fit-content;
   font-family: consolas;
   font-size: 20px;
 }
@@ -45,7 +45,7 @@ a {
 
 .search-bar {
   display: flex;
-  width: 506px;
+  min-width: 500px;
   height: 68px;
   background-color: #850909;
   justify-content: center;
@@ -83,9 +83,93 @@ h2 {
   font-weight: 500;
 }
 
+#nav-button-display {
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
   #nav-button {
     display: none;
+  }
+
+  #nav-button-display {
+    display: inline-block;
+  }
+
+  .search-bar {
+    display: flex;
+    min-width: 200px;
+    height: 68px;
+    background-color: #850909;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    border-color: #6f0606;
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 50px;
+    border-color: #3e4c57;
+    border-style: solid;
+    border-width: 5px;
+    font-family: consolas;
+    margin: 20px;
+  }
+
+  .dropbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #850909;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    border-radius: 20px;
+    border-color: #3e4c57;
+    border-style: solid;
+    border-width: 5px;
+    cursor: pointer;
+  }
+
+  .dropbtn:hover,
+  .dropbtn:focus {
+    background-color: #3e8e41;
+  }
+
+  .dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    right: 0;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
   }
+
+  .dropdown a:hover {
+    background-color: #ddd;
+  }
+
+  .show {
+    display: block;
+  }
+
 }
