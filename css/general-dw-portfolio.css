@@ -17,7 +17,9 @@ nav {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
+  font-family: consolas;
+  font-size: 20px;
 }
 
 .icon-box {
