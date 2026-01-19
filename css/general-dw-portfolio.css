@@ -17,7 +17,7 @@ nav {
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   font-family: consolas;
   font-size: 20px;
 }
@@ -76,6 +76,11 @@ input[type="text"]::placeholder {
 .img-size-icons {
   width: 70%;
   margin: 10px;
+}
+
+h1 {
+    font-family: silkscreen;
+    font-size: 50px;
 }
 
 h2 {

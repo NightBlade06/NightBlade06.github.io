@@ -46,8 +46,10 @@ h4 {
     font-size: 30px;
 }
 
-a{
-
+.white2 {
+    color: #ffffff;
+    font-family: consolas;
+    font-size: 20px;
 }
 
 .img-size {
@@ -79,6 +81,11 @@ a{
         color: #ffffff;
         font-family: consolas;
         font-size: 20px;
+    }
+
+    h1 {
+        font-family: silkscreen;
+        font-size: 30px;
     }
 
     h3 {
