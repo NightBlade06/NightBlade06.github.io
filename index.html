@@ -13,13 +13,12 @@
         href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Silkscreen:wght@400;700&display=swap"
         rel="stylesheet">
     <script>
-        /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+        // opened drop down menu waarneer er op geklikt wordt
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
         }
 
-        // Close the dropdown if the user clicks outside of it
+        // sluit drop down menu
         window.onclick = function (event) {
             if (!event.target.matches('.dropbtn')) {
                 var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -36,14 +35,18 @@ toggle between hiding and showing the dropdown content */
     </script>
 </head>
 <header>
+    <!-- navigatie -->
     <nav>
+        <!-- home button -->
         <a id="nav-button" href="index.html" class="icon-box">
             <div class="icon-background"><img class="img-size-icons" src="images/house.png" alt="home-png"></div>
             <p>home</p>
         </a>
+        <!-- nog niet werkende search bar -->
         <div class="search-bar-background">
             <input class="search-bar" id="text" type="text" placeholder="&#128270; Search...">
         </div>
+        <!-- drop don menu (verbogen als beel groter dan 600px is) -->
         <div id="nav-button-display" class="dropdown">
             <button onclick="myFunction()" class="dropbtn"><img class="img-size-icons" src="images/burger-menu.png"
                     alt="menu"></button>
@@ -54,15 +57,18 @@ toggle between hiding and showing the dropdown content */
                 <a href="../html/contact-dw-portfolio.html">Contact</a>
             </div>
         </div>
+        <!-- about button -->
         <a id="nav-button" href="../html/about-dw-portfolio.html" class="icon-box">
             <div class="icon-background"><img class="img-size-icons" src="images/hand-wave.png" alt="about-png"></div>
             <p>about</p>
         </a>
+        <!-- projects button -->
         <a id="nav-button" href="../html/projects-dw-portfolio.html" class="icon-box">
             <div class="icon-background"><img class="img-size-icons" src="images/floppy-disk.png" alt="projects-png">
             </div>
             <p>projects</p>
         </a>
+        <!-- contact button -->
         <a id="nav-button" href="../html/contact-dw-portfolio.html" class="icon-box">
             <div class="icon-background"><img class="img-size-icons" src="images/mail.png" alt="contact-png"></div>
             <p>contact</p>
@@ -78,8 +84,8 @@ toggle between hiding and showing the dropdown content */
     <h2>
         Social-media
     </h2>
-    <div class="social-media-box">
-        <a href="https://x.com/NightB1ade06" class="icon-box">
+    <div class="social-media-box"> <!-- box voor de social media icons -->
+        <a href="https://x.com/NightB1ade06" class="icon-box"> <!-- styling voor de social media icons-->
             <div class="icon-background"><img class="img-size-icons" src="images/twitter.png" alt="contact-png"></div>
             <p>Twitter</p>
         </a>
