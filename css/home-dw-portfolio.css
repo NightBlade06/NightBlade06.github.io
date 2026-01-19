@@ -14,13 +14,33 @@ p {
 }
 
 h2 {
-  font-family: "Libre Barcode 39 Extended Text", system-ui;
-  font-size: 80px;
-  color: #850909;
-  font-weight: 500;
+    font-family: "Libre Barcode 39 Text", system-ui;
+    font-size: 80px;
+    color: #850909;
+    font-weight: 500;
 }
 
 .img-size-cat {
-    width: 20%;
+    min-width: 10%;
     margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+
+    h1 {
+        font-family: silkscreen;
+        font-size: 30px;
+    }
+
+    h2 {
+        font-family: "Libre Barcode 39 Text", system-ui;
+        font-size: 50px;
+        color: #850909;
+        font-weight: 500;
+    }
+
+    .img-size-cat {
+        width: 40%;
+        margin: 10px;
+    }
 }
