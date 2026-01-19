@@ -135,11 +135,6 @@ h2 {
     cursor: pointer;
   }
 
-  .dropbtn:hover,
-  .dropbtn:focus {
-    background-color: #3e8e41;
-  }
-
   .dropdown {
     float: right;
     position: relative;
